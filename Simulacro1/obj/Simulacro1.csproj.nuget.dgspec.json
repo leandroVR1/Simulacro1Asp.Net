@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip5-027/Documents/leo/Simulacro1/Simulacro1.csproj": {}
+    "/home/riwip5-027/Documents/leo/Simulacros/Simulacro1Asp.Net/Simulacro1/Simulacro1.csproj": {}
   },
   "projects": {
-    "/home/riwip5-027/Documents/leo/Simulacro1/Simulacro1.csproj": {
+    "/home/riwip5-027/Documents/leo/Simulacros/Simulacro1Asp.Net/Simulacro1/Simulacro1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip5-027/Documents/leo/Simulacro1/Simulacro1.csproj",
+        "projectUniqueName": "/home/riwip5-027/Documents/leo/Simulacros/Simulacro1Asp.Net/Simulacro1/Simulacro1.csproj",
         "projectName": "Simulacro1",
-        "projectPath": "/home/riwip5-027/Documents/leo/Simulacro1/Simulacro1.csproj",
+        "projectPath": "/home/riwip5-027/Documents/leo/Simulacros/Simulacro1Asp.Net/Simulacro1/Simulacro1.csproj",
         "packagesPath": "/home/riwip5-027/.nuget/packages/",
-        "outputPath": "/home/riwip5-027/Documents/leo/Simulacro1/obj/",
+        "outputPath": "/home/riwip5-027/Documents/leo/Simulacros/Simulacro1Asp.Net/Simulacro1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/riwip5-027/.nuget/NuGet/NuGet.Config"

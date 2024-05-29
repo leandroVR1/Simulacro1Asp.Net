@@ -40,3 +40,8 @@ ALTER TABLE Books ADD IsDeleted BOOLEAN DEFAULT FALSE
 /*Añadir columna IsDeleted a la tabla Editorials*/
 ALTER TABLE Editorials ADD IsDeleted BOOLEAN DEFAULT FALSE
 
+ALTER TABLE `Books`
+ADD  IdAuthor INT;
+
+ALTER TABLE `Books`
+ADD FOREIGN KEY (IdAuthor) REFERENCES Authors(Id);

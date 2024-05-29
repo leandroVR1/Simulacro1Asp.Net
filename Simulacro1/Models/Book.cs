@@ -33,7 +33,11 @@ namespace Simulacro1.Models
         [Required]
         [StringLength(45)]
         public string? Description { get; set; }
+        public int IdAuthor { get; set; }
+        public virtual Author? Author { get; set; }
+
         public bool IsDeleted { get; set; }
+
 
     }
 }

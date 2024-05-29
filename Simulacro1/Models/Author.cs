@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Simulacro1.Models{
 
@@ -21,6 +22,9 @@ namespace Simulacro1.Models{
         [StringLength(1255)]
         public string? Nationality { get; set; }
         public bool IsDeleted { get; set; }
+        
+        [JsonIgnore]
+        public List<Book> Books { get; set; }
 
     }
 }
