@@ -21,10 +21,10 @@ namespace Simulacro1.Models{
         [Required]
         [StringLength(1255)]
         public string? Nationality { get; set; }
-        public bool? IsDeleted { get; set; }
+        public bool IsDeleted { get; set; }
         
-        //[JsonIgnore]
-        public List<Book> Books { get; set; }
+      
+        public List<Book>? Books { get; set; }
 
     }
 }

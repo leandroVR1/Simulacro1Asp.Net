@@ -60,10 +60,10 @@ namespace Simulacro1.Services
                 existingAuthor.Nationality = author.Nationality;
             }
 
-            // En este caso, manejamos el booleano de forma explícita
+           
             existingAuthor.IsDeleted = author.IsDeleted;
 
-            // Opcional: si quieres actualizar libros también, pero con cuidado de no reemplazar todo el listado inadvertidamente
+           
             if (author.Books != null && author.Books.Any())
             {
                 existingAuthor.Books = author.Books;
