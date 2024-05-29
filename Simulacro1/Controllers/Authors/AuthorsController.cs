@@ -42,7 +42,7 @@ namespace Simulacro1.Controllers
            return CreatedAtAction("GetAuthor", new {id=createdAuthor.Id},createdAuthor);
         }
         [HttpPut("{Id}")]
-        public async Task<ActionResult<Author>> UpdateAuthor(int Id, Author author)
+        public async Task<ActionResult<Author>> UpdateAuthor(int Id,[FromBody] Author author)
         {
             var updatedAuthor = await _authorService.UpdateAuthor(Id, author);
             if (updatedAuthor == null)
