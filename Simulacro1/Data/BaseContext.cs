@@ -17,6 +17,15 @@ namespace Simulacro1.Data
         public DbSet<Editorial> Editorials { get; set; }
         public DbSet<Book> Books { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Author>()
+            .HasMany(a=>a.Books)
+            .WithOne(b=>b.Authors)
+            .HasForeignKey(b=>b.IdAuthor);
+        }
+
 
     }
 }

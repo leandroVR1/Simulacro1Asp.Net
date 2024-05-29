@@ -18,11 +18,12 @@ namespace Simulacro1.Services
         }
         public async Task<IEnumerable<Author>> GetAllAuthors()
         {
-            return await _context.Authors.Where(a => !a.IsDeleted).ToListAsync();
+          
+           return await _context.Authors.Where(a => !a.IsDeleted).Include(a => a.Books).ToListAsync();
         }
         public async Task<Author> GetAuthorById(int Id)
         {
-            return await _context.Authors.FindAsync(Id);
+            return await _context.Authors.Include(a => a.Books).FirstOrDefaultAsync(a => a.Id == Id);
         }
         public async Task<Author> CreateAuthor(Author author)
         {
@@ -55,7 +56,7 @@ namespace Simulacro1.Services
         }
         public async Task<IEnumerable<Author>> GetDeletedAuthors()
         {
-            return await _context.Authors.Where(a => a.IsDeleted).ToListAsync();
+             return await _context.Authors.Where(a => a.IsDeleted).Include(a => a.Books).ToListAsync();
         }
             
         
